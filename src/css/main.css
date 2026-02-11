@@ -192,6 +192,7 @@
     /* Card hover effects — light cards */
     .sb-card {
         @apply transition-all duration-300 ease-out;
+        height: 100%;
         border: 1px solid rgba(79, 70, 229, 0.08);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     }
@@ -524,19 +525,20 @@
     /* ===== Dark Section Gradient Backgrounds (not hero) ===== */
     .sb-component-section.bg-dark-fg-light:not(#hero) {
         overflow: hidden;
+        background: #0a0514 !important;
     }
     .sb-component-section.bg-dark-fg-light:not(#hero)::before {
         content: '';
         position: absolute;
-        inset: -20%;
-        width: 140%;
-        height: 140%;
+        inset: -50%;
+        width: 200%;
+        height: 200%;
         z-index: 0;
         background:
-            radial-gradient(ellipse at 25% 35%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
-            radial-gradient(ellipse at 75% 60%, rgba(236, 72, 153, 0.08) 0%, transparent 50%),
-            radial-gradient(ellipse at 50% 80%, rgba(79, 70, 229, 0.06) 0%, transparent 45%);
-        filter: blur(60px);
+            radial-gradient(ellipse at 30% 40%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
+            radial-gradient(ellipse at 70% 60%, rgba(236, 72, 153, 0.18) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 20%, rgba(79, 70, 229, 0.20) 0%, transparent 50%);
+        filter: blur(80px);
         pointer-events: none;
     }
     .sb-component-section.bg-dark-fg-light:not(#hero) > .w-full {
@@ -547,8 +549,9 @@
     /* ===== Light Section Subtle Gradient Wash ===== */
     .sb-component-section.bg-light-fg-dark {
         background:
-            radial-gradient(ellipse at 80% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
-            radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.02) 0%, transparent 50%) !important;
+            radial-gradient(ellipse at 80% 20%, rgba(79, 70, 229, 0.04) 0%, transparent 50%),
+            radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+            linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%) !important;
     }
 }
 

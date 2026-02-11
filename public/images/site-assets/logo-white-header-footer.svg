@@ -1,0 +1,58 @@
+<!-- Elysium Cyber Logo - White version for dark backgrounds -->
+<svg width="280" height="48" viewBox="0 0 280 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- E BRACKETS ICON -->
+  <g transform="translate(24 24)">
+    <!-- LEFT E -->
+    <g transform="translate(0 0) scale(0.45)">
+      <g transform="translate(-14 -38) scale(0.55)">
+        <defs>
+          <mask id="mTop_left_ftr">
+            <rect x="0" y="0" width="50" height="50" fill="white"/>
+            <circle cx="50" cy="50" r="30" fill="black"/>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="50" height="50" fill="#fff" mask="url(#mTop_left_ftr)"/>
+        <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#fff"/>
+        <defs>
+          <mask id="mBot_left_ftr">
+            <rect x="0" y="0" width="50" height="50" fill="white"/>
+            <circle cx="50" cy="50" r="30" fill="black"/>
+          </mask>
+        </defs>
+        <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
+          <rect x="0" y="0" width="50" height="50" fill="#fff" mask="url(#mBot_left_ftr)"/>
+        </g>
+      </g>
+    </g>
+    <!-- RIGHT E (mirrored) -->
+    <g transform="translate(18 0) scale(-0.45, 0.45)">
+      <g transform="translate(-14 -38) scale(0.55)">
+        <defs>
+          <mask id="mTop_right_ftr">
+            <rect x="0" y="0" width="50" height="50" fill="white"/>
+            <circle cx="50" cy="50" r="30" fill="black"/>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="50" height="50" fill="#fff" mask="url(#mTop_right_ftr)"/>
+        <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#fff"/>
+        <defs>
+          <mask id="mBot_right_ftr">
+            <rect x="0" y="0" width="50" height="50" fill="white"/>
+            <circle cx="50" cy="50" r="30" fill="black"/>
+          </mask>
+        </defs>
+        <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
+          <rect x="0" y="0" width="50" height="50" fill="#fff" mask="url(#mBot_right_ftr)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- WORDMARK -->
+  <text x="56" y="32"
+        style="font-family:Inter, Helvetica, Arial, sans-serif;
+               font-weight:500;
+               font-size:18px;
+               letter-spacing:.22em;
+               fill:#fff;">ELYSIUM CYBER</text>
+</svg>

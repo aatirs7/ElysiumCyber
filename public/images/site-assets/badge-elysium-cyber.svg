@@ -1,0 +1,45 @@
+<svg viewBox="0 0 280 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mTopL">
+      <rect x="0" y="0" width="50" height="50" fill="white"/>
+      <circle cx="50" cy="50" r="30" fill="black"/>
+    </mask>
+    <mask id="mBotL">
+      <rect x="0" y="0" width="50" height="50" fill="white"/>
+      <circle cx="50" cy="50" r="30" fill="black"/>
+    </mask>
+    <mask id="mTopR">
+      <rect x="0" y="0" width="50" height="50" fill="white"/>
+      <circle cx="50" cy="50" r="30" fill="black"/>
+    </mask>
+    <mask id="mBotR">
+      <rect x="0" y="0" width="50" height="50" fill="white"/>
+      <circle cx="50" cy="50" r="30" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Left bracket -->
+  <g transform="translate(0, 12) scale(0.16)">
+    <g transform="translate(0, -66)">
+      <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mTopL)"/>
+      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#FFFFFF"/>
+      <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
+        <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mBotL)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="140" y="17" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" font-size="14" letter-spacing="0.2em" fill="#FFFFFF">ELYSIUM CYBER</text>
+
+  <!-- Right bracket -->
+  <g transform="translate(267, 12) scale(0.16)">
+    <g transform="translate(0, -66) scale(-1, 1) translate(-40, 0)">
+      <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mTopR)"/>
+      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#FFFFFF"/>
+      <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
+        <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mBotR)"/>
+      </g>
+    </g>
+  </g>
+</svg>
