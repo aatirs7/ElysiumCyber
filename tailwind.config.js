@@ -6,6 +6,9 @@ module.exports = {
     safelist: [
         'text-neutral',
         'text-light',
+        'text-primaryLight',
+        'bg-primaryLight',
+        'border-primaryLight',
         {
             pattern: /(m|p)(t|b|l|r)-(0|px|1|1.5|2|2.5|3|3.5|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/
         },
@@ -15,14 +18,19 @@ module.exports = {
             boxShadow: {
                 header: '0px 2px 8px rgba(27, 32, 50, .08)',
                 card: '0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)',
-                'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)'
+                'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+                'card-dark': '0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2)',
+                'card-dark-hover': '0 20px 25px -5px rgba(79, 70, 229, 0.15), 0 8px 10px -6px rgba(79, 70, 229, 0.1)',
+                'glow': '0 0 20px rgba(79, 70, 229, 0.15)'
             },
             colors: {
                 light: themeStyle.light,
                 dark: themeStyle.dark,
                 neutral: themeStyle.neutral,
                 neutralAlt: themeStyle.neutralAlt,
-                primary: themeStyle.primary
+                primary: themeStyle.primary,
+                primaryLight: '#818CF8',
+                primaryDark: '#3730A3'
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],

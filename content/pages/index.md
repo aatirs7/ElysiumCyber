@@ -6,7 +6,7 @@ sections:
   - type: GenericSection
     title:
       text: Cybersecurity Consulting & On-Demand Engineering
-      color: text-dark
+      color: text-light
       type: TitleBlock
     badge:
       url: /images/elysium-cyber-badge.svg
@@ -28,15 +28,22 @@ sections:
       url: /images/main-hero.svg
       altText: Abstract cybersecurity illustration
       type: ImageBlock
-    colors: bg-light-fg-dark
+    backgroundImage:
+      url: /images/abstract-background.svg
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 8
+      type: BackgroundImage
+    colors: bg-dark-fg-light
     styles:
       self:
         alignItems: center
         flexDirection: row
         padding:
-          - pt-16 sm:pt-24
+          - pt-20 sm:pt-32
           - pl-6 md:pl-14
-          - pb-16 sm:pb-24
+          - pb-20 sm:pb-32
           - pr-6 md:pr-14
 
   # WHAT WE DO
@@ -94,7 +101,7 @@ sections:
               - pb-8
               - pr-8 md:pr-8
             borderRadius: x-large
-    colors: bg-neutral-fg-dark
+    colors: bg-light-fg-dark
     styles:
       self:
         justifyContent: center
@@ -144,6 +151,13 @@ sections:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
             borderRadius: x-large
+    backgroundImage:
+      url: /images/background-grid.svg
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 4
+      type: BackgroundImage
     colors: bg-light-fg-dark
     styles:
       self:
@@ -156,7 +170,7 @@ sections:
   - type: FeaturedItemsSection
     title:
       text: Where We Help Most
-      color: text-dark
+      color: text-light
       type: TitleBlock
       styles:
         self:
@@ -167,7 +181,7 @@ sections:
       - type: FeaturedItem
         title: Flexible engineering without full-time hires
         text: You need an Elastic or SIEM engineer but don't want permanent headcount.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
@@ -176,7 +190,7 @@ sections:
       - type: FeaturedItem
         title: Rapid detection & automation
         text: You need detections and automation built quickly for an upcoming initiative or compliance deadline.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
@@ -185,7 +199,7 @@ sections:
       - type: FeaturedItem
         title: Temporary capacity for understaffed teams
         text: Your team is stretched thin and needs temporary engineering capacity to maintain velocity.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
@@ -194,7 +208,7 @@ sections:
       - type: FeaturedItem
         title: IR automation & SOAR
         text: You need IR automation playbooks designed and implemented from scratch.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
@@ -203,7 +217,7 @@ sections:
       - type: FeaturedItem
         title: Compliance & documentation
         text: You need security and compliance documentation generated efficiently to meet audit requirements.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
@@ -212,12 +226,12 @@ sections:
       - type: FeaturedItem
         title: Security architecture reviews
         text: You need an external perspective on your security posture and technology stack.
-        colors: bg-light-fg-dark
+        colors: bg-neutralAlt-fg-light
         styles:
           self:
             padding: [pt-8, pb-8, pl-8, pr-8]
             borderRadius: x-large
-    colors: bg-neutral-fg-dark
+    colors: bg-dark-fg-light
     styles:
       self:
         justifyContent: center
@@ -322,6 +336,13 @@ sections:
         url: https://calendly.com/elysiumventuresgroup/30min
         style: primary
         type: Button
+    backgroundImage:
+      url: /images/abstract-background.svg
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 5
+      type: BackgroundImage
     colors: bg-dark-fg-light
     styles:
       self:

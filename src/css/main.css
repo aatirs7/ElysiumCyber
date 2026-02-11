@@ -5,6 +5,20 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    ::selection {
+        background-color: rgba(79, 70, 229, 0.2);
+        color: inherit;
+    }
+
+    *:focus-visible {
+        outline: 2px solid rgba(79, 70, 229, 0.5);
+        outline-offset: 2px;
+    }
+
     body {
         @apply text-base leading-relaxed;
         -webkit-tap-highlight-color: transparent;
@@ -188,6 +202,18 @@
     .bg-neutralAlt-fg-dark.sb-card {
         @apply border-transparent;
     }
+    /* Dark section cards */
+    .bg-dark-fg-light .sb-card,
+    .bg-neutralAlt-fg-light.sb-card {
+        @apply shadow-card-dark border-white/10;
+    }
+    @media (hover: hover) {
+        .bg-dark-fg-light .sb-card:hover,
+        .bg-neutralAlt-fg-light.sb-card:hover {
+            @apply shadow-card-dark-hover;
+            transform: translateY(-4px);
+        }
+    }
 
     /* Buttons */
     .sb-component-button {
@@ -195,12 +221,13 @@
     }
     @media (hover: hover) {
         .sb-component-button:hover {
-            @apply opacity-95;
-            transform: scale(1.03);
+            transform: translateY(-1px);
+            @apply shadow-lg;
         }
     }
     .sb-component-button:active {
-        transform: scale(0.98);
+        transform: translateY(0);
+        @apply shadow-sm;
     }
 
     /* Links */
@@ -262,7 +289,7 @@
             @apply bg-primary border-primary text-light;
         }
         .sb-component-button-secondary {
-            @apply border-dark text-dark;
+            @apply border-primary text-primary;
         }
         .sb-image-strip-wrap {
             &:before,
@@ -297,7 +324,7 @@
             @apply bg-primary border-primary text-light;
         }
         .sb-component-button-secondary {
-            @apply border-dark text-dark;
+            @apply border-primary text-primary;
         }
         .sb-image-strip-wrap {
             &:before,
@@ -332,7 +359,7 @@
             @apply bg-primary border-primary text-light;
         }
         .sb-component-button-secondary {
-            @apply border-light text-light;
+            @apply border-primaryLight text-primaryLight;
         }
         .sb-image-strip-wrap {
             &:before,
@@ -342,7 +369,13 @@
         }
         .sb-divider,
         .sb-footer-bottom {
-            @apply border-light/20;
+            @apply border-light/10;
+        }
+        .sb-component-footer h3 {
+            @apply text-light/60;
+        }
+        .sb-component-footer .sb-markdown a {
+            @apply text-primaryLight hover:text-light;
         }
         .sb-carousel-prev,
         .sb-carousel-next {
@@ -363,6 +396,17 @@
         }
         .sb-component-button-secondary {
             @apply border-dark text-dark;
+        }
+    }
+    /* Dark cards on dark sections */
+    .bg-neutralAlt-fg-light,
+    .sb-card.bg-neutralAlt-fg-light {
+        @apply text-light bg-neutralAlt;
+        .sb-component-button-primary {
+            @apply bg-primary border-primary text-light;
+        }
+        .sb-component-button-secondary {
+            @apply border-primaryLight text-primaryLight;
         }
     }
 }

@@ -28,6 +28,7 @@ export default function PageLayout(props) {
                                 <Component
                                     key={index}
                                     {...section}
+                                    sectionIndex={index}
                                     enableAnnotations={enableAnnotations}
                                     {...(enableAnnotations && { 'data-sb-field-path': `sections.${index}` })}
                                 />

@@ -26,6 +26,8 @@ export default function Footer(props) {
                 'sb-component',
                 'sb-component-footer',
                 colors,
+                'border-t',
+                'border-white/5',
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
                 styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-6 py-16 sm:py-28'
             )}

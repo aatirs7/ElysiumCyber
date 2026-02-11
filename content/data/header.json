@@ -1,7 +1,7 @@
 {
   "logo": {
-    "url": "/images/logo-dark.svg",
-    "altText": "Logo dark",
+    "url": "/images/logo-white.svg",
+    "altText": "Elysium Cyber",
     "styles": {
       "self": {
         "margin": ["mr-3"]
@@ -61,6 +61,6 @@
   ],
 
   "variant": "logo-left-primary-nav-centered",
-  "colors": "bg-light-fg-dark",
+  "colors": "bg-dark-fg-light",
   "type": "Header"
 }

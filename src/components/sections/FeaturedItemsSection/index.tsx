@@ -7,6 +7,7 @@ import { getDataAttrs } from '../../../utils/get-data-attrs';
 import Section from '../Section';
 import { Action, Badge } from '../../atoms';
 import TitleBlock from '../../blocks/TitleBlock';
+import StaggerChildren, { StaggerItem } from '../../atoms/StaggerChildren';
 
 export default function FeaturedItemsSection(props) {
     const { elementId, colors, backgroundImage, badge, title, subtitle, items = [], actions = [], variant, styles = {}, enableAnnotations } = props;
@@ -97,14 +98,16 @@ function FeaturedItemsThreeColGrid(props) {
     }
     const FeaturedItem = getComponent('FeaturedItem');
     return (
-        <div
+        <StaggerChildren
             className={classNames('w-full', 'grid', 'gap-6', 'sm:gap-10', 'sm:grid-cols-2', 'lg:grid-cols-3', { 'mt-10 sm:mt-14': hasTopMargin })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <StaggerItem key={index}>
+                    <FeaturedItem {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                </StaggerItem>
             ))}
-        </div>
+        </StaggerChildren>
     );
 }
 
@@ -115,14 +118,16 @@ function FeaturedItemsTwoColGrid(props) {
     }
     const FeaturedItem = getComponent('FeaturedItem');
     return (
-        <div
+        <StaggerChildren
             className={classNames('w-full', 'grid', 'gap-6', 'sm:gap-10', 'sm:grid-cols-2', { 'mt-10 sm:mt-14': hasTopMargin })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <StaggerItem key={index}>
+                    <FeaturedItem {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                </StaggerItem>
             ))}
-        </div>
+        </StaggerChildren>
     );
 }
 
@@ -133,14 +138,16 @@ function FeaturedItemsSmallList(props) {
     }
     const FeaturedItem = getComponent('FeaturedItem');
     return (
-        <div
+        <StaggerChildren
             className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <StaggerItem key={index}>
+                    <FeaturedItem {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                </StaggerItem>
             ))}
-        </div>
+        </StaggerChildren>
     );
 }
 
@@ -151,11 +158,13 @@ function FeaturedItemsBigList(props) {
     }
     const FeaturedItem = getComponent('FeaturedItem');
     return (
-        <div className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })} {...(hasAnnotations && { 'data-sb-field-path': '.items' })}>
+        <StaggerChildren className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })} {...(hasAnnotations && { 'data-sb-field-path': '.items' })}>
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <StaggerItem key={index}>
+                    <FeaturedItem {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                </StaggerItem>
             ))}
-        </div>
+        </StaggerChildren>
     );
 }
 
