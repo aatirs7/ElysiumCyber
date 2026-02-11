@@ -47,19 +47,19 @@
       
         {
             "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
+            "url": "https://x.com/elysiumcyber",
             "icon": "twitter",
             "type": "Social"
         },
         {
             "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+            "url": "https://www.linkedin.com/company/elysium-ventures-llc",
             "icon": "linkedin",
             "type": "Social"
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "mailto:contact@elysiumcyber.com",
             "icon": "mail",
             "type": "Social"
         }
@@ -67,7 +67,7 @@
     "legalLinks": [
         {
             "label": "Terms",
-            "url": "/",
+            "url": "/terms/",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
@@ -75,7 +75,7 @@
         },
         {
             "label": "Privacy",
-            "url": "/",
+            "url": "/privacy/",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",

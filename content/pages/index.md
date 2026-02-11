@@ -46,8 +46,8 @@ sections:
       color: text-dark
       styles:
         self:
-          textAlign: left
-        type: TitleBlock
+          textAlign: center
+      type: TitleBlock
     subtitle: We support security teams through both consulting engagements and on-demand engineering capacity.
     variant: two-col-grid
     items:
@@ -102,6 +102,8 @@ sections:
           - pb-16
           - pl-6 md:pl-14
           - pr-6 md:pr-14
+      subtitle:
+        textAlign: center
 
   # HOW WE WORK
   - type: FeaturedItemsSection
@@ -145,6 +147,8 @@ sections:
     styles:
       self:
         padding: [pt-14, pb-14, pl-6, pr-6, md:pl-14, md:pr-14]
+      subtitle:
+        textAlign: center
 
   # WHERE WE HELP MOST
   - type: FeaturedItemsSection
@@ -215,6 +219,8 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+      subtitle:
+        textAlign: center
 
   # RECENT WORK
   - type: FeaturedItemsSection
@@ -245,6 +251,8 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+      subtitle:
+        textAlign: center
 
   # INTERNSHIPS
   - type: GenericSection
@@ -261,11 +269,14 @@ sections:
     actions:
       - label: Explore Internships →
         url: /internship
+        style: secondary
         type: Link
     colors: bg-neutral-fg-dark
     styles:
       self:
         padding: [pt-14, pb-14, pl-6, pr-6, md:pl-14, md:pr-14]
+        textAlign: center
+      subtitle:
         textAlign: center
 
   # WHO WE ARE
@@ -288,6 +299,8 @@ sections:
           - max-w-4xl
         margin:
           - mx-auto
+      text:
+        textAlign: center
 
   # FINAL CTA
   - type: GenericSection
@@ -308,6 +321,8 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+        textAlign: center
+      subtitle:
         textAlign: center
 
 seo:

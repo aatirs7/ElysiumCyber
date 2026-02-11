@@ -32,9 +32,9 @@ export default function Footer(props) {
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
         >
             <div className="mx-auto max-w-[1800px]">
-                <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {(logo?.url || title || text) && (
-                        <div className="pb-8 sm:col-span-3 lg:col-auto">
+                        <div className="pb-8 sm:col-span-2 lg:col-span-1">
                             {(logo?.url || title) && (
                                 <Link href="/" className="flex flex-col items-start">
                                     {logo && (
