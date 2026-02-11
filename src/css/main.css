@@ -189,28 +189,35 @@
         }
     }
 
-    /* Card hover effects */
+    /* Card hover effects — light cards */
     .sb-card {
-        @apply transition-all duration-300 ease-out shadow-card border border-gray-200;
+        @apply transition-all duration-300 ease-out;
+        border: 1px solid rgba(79, 70, 229, 0.08);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     }
     @media (hover: hover) {
         .sb-card:hover {
-            @apply shadow-card-hover;
             transform: translateY(-4px);
+            border-color: rgba(79, 70, 229, 0.15);
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.08), 0 8px 16px rgba(0, 0, 0, 0.06);
         }
     }
     .bg-neutralAlt-fg-dark.sb-card {
         @apply border-transparent;
     }
-    /* Dark section cards */
+    /* Dark section cards — glassmorphism with purple glow */
     .bg-dark-fg-light .sb-card,
     .bg-neutralAlt-fg-light.sb-card {
-        @apply shadow-card-dark border-white/[0.15];
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: none;
     }
     @media (hover: hover) {
         .bg-dark-fg-light .sb-card:hover,
         .bg-neutralAlt-fg-light.sb-card:hover {
-            @apply shadow-card-dark-hover;
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(139, 92, 246, 0.3);
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.12);
             transform: translateY(-4px);
         }
     }
@@ -410,6 +417,34 @@
         }
     }
 
+    /* ===== Button Gradient Overrides ===== */
+    .bg-light-fg-dark .sb-component-button-primary,
+    .bg-neutral-fg-dark .sb-component-button-primary {
+        background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+        border-color: transparent;
+        @apply text-light;
+        box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
+    }
+    @media (hover: hover) {
+        .bg-light-fg-dark .sb-component-button-primary:hover,
+        .bg-neutral-fg-dark .sb-component-button-primary:hover {
+            background: linear-gradient(135deg, #6d28d9 0%, #4338ca 100%);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
+        }
+    }
+    .bg-dark-fg-light .sb-component-button-primary {
+        background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+        border-color: transparent;
+        @apply text-light;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    }
+    @media (hover: hover) {
+        .bg-dark-fg-light .sb-component-button-primary:hover {
+            background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+        }
+    }
+
     /* ===== Hero Section ===== */
     #hero {
         overflow: hidden;
@@ -432,7 +467,7 @@
 
     /* Hero gradient heading */
     #hero .sb-component-title {
-        background: linear-gradient(135deg, #ec4899 0%, #a855f7 40%, #818CF8 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #c7d2e0 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -484,6 +519,36 @@
     /* Hero badge - slightly larger */
     #hero .sb-component-badge img {
         @apply h-7 sm:h-8;
+    }
+
+    /* ===== Dark Section Gradient Backgrounds (not hero) ===== */
+    .sb-component-section.bg-dark-fg-light:not(#hero) {
+        overflow: hidden;
+    }
+    .sb-component-section.bg-dark-fg-light:not(#hero)::before {
+        content: '';
+        position: absolute;
+        inset: -20%;
+        width: 140%;
+        height: 140%;
+        z-index: 0;
+        background:
+            radial-gradient(ellipse at 25% 35%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+            radial-gradient(ellipse at 75% 60%, rgba(236, 72, 153, 0.08) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 80%, rgba(79, 70, 229, 0.06) 0%, transparent 45%);
+        filter: blur(60px);
+        pointer-events: none;
+    }
+    .sb-component-section.bg-dark-fg-light:not(#hero) > .w-full {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* ===== Light Section Subtle Gradient Wash ===== */
+    .sb-component-section.bg-light-fg-dark {
+        background:
+            radial-gradient(ellipse at 80% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
+            radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.02) 0%, transparent 50%) !important;
     }
 }
 

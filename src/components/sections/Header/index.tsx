@@ -12,6 +12,14 @@ import MenuIcon from '../../svgs/menu';
 
 export default function Header(props) {
     const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
         <header
             className={classNames(
@@ -22,6 +30,9 @@ export default function Header(props) {
                 'shadow-none',
                 'border-b',
                 'border-white/5',
+                'transition-all',
+                'duration-300',
+                scrolled ? 'backdrop-blur-xl bg-opacity-80' : '',
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
                 styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'p-4',
                 'z-50'
