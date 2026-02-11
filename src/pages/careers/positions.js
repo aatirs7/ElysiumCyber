@@ -15,7 +15,7 @@ export default function Positions({ site }) {
             location: 'Remote',
             duration: 'Flexible',
             description: 'Remote cybersecurity internship for students and early-career professionals. Work on real security projects including detection engineering, compliance documentation, and cloud security.',
-            applyUrl: 'mailto:careers@elysiumcyber.com'
+            applyUrl: 'https://www.indeed.com/job/cybersecurity-intern-29ae786571e2abe9'
         }
     ];
 
@@ -147,6 +147,8 @@ export default function Positions({ site }) {
                                                     <div className="flex-shrink-0">
                                                         <Link
                                                             href={job.applyUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
                                                             className="inline-flex items-center gap-2 px-6 py-3 bg-dark text-light rounded font-medium hover:bg-dark/90 transition-colors"
                                                         >
                                                             Apply Now
