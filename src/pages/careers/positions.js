@@ -13,9 +13,9 @@ export default function Positions({ site }) {
             title: 'Cybersecurity Intern',
             type: 'Internship',
             location: 'Remote',
-            duration: '1-3 months',
-            description: 'Remote cybersecurity internships for students and recent graduates. Work on real security projects across three specialized tracks.',
-            applyUrl: '/internship'
+            duration: 'Flexible',
+            description: 'Remote cybersecurity internship for students and early-career professionals. Work on real security projects including detection engineering, compliance documentation, and cloud security.',
+            applyUrl: 'mailto:careers@elysiumcyber.com'
         }
     ];
 
@@ -29,7 +29,7 @@ export default function Positions({ site }) {
             </Head>
 
             <div className="sb-page">
-                <div className="sb-base sb-default-base-layout bg-neutral">
+                <div className="sb-base sb-default-base-layout bg-light">
                     {site.header && <Header {...site.header} enableAnnotations={false} />}
 
                     <main id="main">
@@ -149,7 +149,7 @@ export default function Positions({ site }) {
                                                             href={job.applyUrl}
                                                             className="inline-flex items-center gap-2 px-6 py-3 bg-dark text-light rounded font-medium hover:bg-dark/90 transition-colors"
                                                         >
-                                                            Learn More
+                                                            Apply Now
                                                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                                             </svg>

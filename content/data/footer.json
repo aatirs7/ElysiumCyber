@@ -4,14 +4,21 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "The bridge between ambition and opportunity.",
+    "text": "Cybersecurity consulting & on-demand engineering for teams that need results.",
     "primaryLinks": {
-        "title": "Programs",
+        "title": "Services",
         "links": [
             {
-                "label": "Internship Program",
-                "altText": "Internship Program",
-                "url": "/internship",
+                "label": "Consulting & Projects",
+                "url": "/services",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "About Us",
+                "url": "/about",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
@@ -33,8 +40,8 @@
                 "type": "Link"
             },
             {
-                "label": "Blog",
-                "url": "/blog",
+                "label": "Contact",
+                "url": "/contact",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
@@ -44,7 +51,6 @@
         "type": "FooterLinksGroup"
     },
     "socialLinks": [
-      
         {
             "altText": "Twitter link",
             "url": "https://x.com/elysiumcyber",
@@ -67,7 +73,7 @@
     "legalLinks": [
         {
             "label": "Terms",
-            "url": "/terms/",
+            "url": "/terms",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
@@ -75,14 +81,14 @@
         },
         {
             "label": "Privacy",
-            "url": "/privacy/",
+            "url": "/privacy",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         }
     ],
-    "copyrightText": "An Aatir Siddiqui Project",
+    "copyrightText": "\u00a9 2025 Elysium Cyber | Founded by Aatir Siddiqui",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }

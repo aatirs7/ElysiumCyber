@@ -205,7 +205,7 @@
     /* Dark section cards */
     .bg-dark-fg-light .sb-card,
     .bg-neutralAlt-fg-light.sb-card {
-        @apply shadow-card-dark border-white/10;
+        @apply shadow-card-dark border-white/[0.15];
     }
     @media (hover: hover) {
         .bg-dark-fg-light .sb-card:hover,

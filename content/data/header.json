@@ -19,13 +19,6 @@
       "type": "Link"
     },
     {
-      "label": "Contracts",
-      "altText": "Previous work and case studies",
-      "url": "/contracts",
-      "style": "secondary",
-      "type": "Link"
-    },
-    {
       "label": "About",
       "altText": "About Elysium Cyber",
       "url": "/about",

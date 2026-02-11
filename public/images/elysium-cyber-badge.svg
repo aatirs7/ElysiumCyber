@@ -21,24 +21,24 @@
   <!-- Left bracket -->
   <g transform="translate(0, 12) scale(0.16)">
     <g transform="translate(0, -66)">
-      <rect x="0" y="0" width="50" height="50" fill="#4A4A4A" mask="url(#mTopL)"/>
-      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#4A4A4A"/>
+      <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mTopL)"/>
+      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#FFFFFF"/>
       <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
-        <rect x="0" y="0" width="50" height="50" fill="#4A4A4A" mask="url(#mBotL)"/>
+        <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mBotL)"/>
       </g>
     </g>
   </g>
 
   <!-- Text -->
-  <text x="140" y="17" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" font-size="14" letter-spacing="0.2em" fill="#4A4A4A">ELYSIUM CYBER</text>
+  <text x="140" y="17" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" font-size="14" letter-spacing="0.2em" fill="#FFFFFF">ELYSIUM CYBER</text>
 
   <!-- Right bracket -->
   <g transform="translate(267, 12) scale(0.16)">
     <g transform="translate(0, -66) scale(-1, 1) translate(-40, 0)">
-      <rect x="0" y="0" width="50" height="50" fill="#4A4A4A" mask="url(#mTopR)"/>
-      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#4A4A4A"/>
+      <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mTopR)"/>
+      <polygon points="5,66 15,60 25,60 35,66 25,72 15,72" fill="#FFFFFF"/>
       <g transform="translate(0 82) scale(1 -1) translate(0 -50)">
-        <rect x="0" y="0" width="50" height="50" fill="#4A4A4A" mask="url(#mBotR)"/>
+        <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" mask="url(#mBotR)"/>
       </g>
     </g>
   </g>
