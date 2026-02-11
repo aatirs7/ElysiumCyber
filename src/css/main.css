@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply text-base;
+        @apply text-base leading-relaxed;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -175,13 +175,32 @@
         }
     }
 
+    /* Card hover effects */
+    .sb-card {
+        @apply transition-all duration-300 ease-out shadow-card border border-gray-200;
+    }
+    @media (hover: hover) {
+        .sb-card:hover {
+            @apply shadow-card-hover;
+            transform: translateY(-4px);
+        }
+    }
+    .bg-neutralAlt-fg-dark.sb-card {
+        @apply border-transparent;
+    }
+
     /* Buttons */
     .sb-component-button {
-        @apply inline-flex justify-center items-center text-center border duration-200 ease-in;
-        transition-property: background-color, border-color, opacity;
+        @apply inline-flex justify-center items-center text-center border transition-all duration-200 ease-out;
     }
-    .sb-component-button:hover {
-        @apply opacity-90;
+    @media (hover: hover) {
+        .sb-component-button:hover {
+            @apply opacity-95;
+            transform: scale(1.03);
+        }
+    }
+    .sb-component-button:active {
+        transform: scale(0.98);
     }
 
     /* Links */

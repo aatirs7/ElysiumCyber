@@ -13,7 +13,9 @@ module.exports = {
     theme: {
         extend: {
             boxShadow: {
-                header: '0px 2px 8px rgba(27, 32, 50, .08)'
+                header: '0px 2px 8px rgba(27, 32, 50, .08)',
+                card: '0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)',
+                'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)'
             },
             colors: {
                 light: themeStyle.light,

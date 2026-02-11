@@ -34,9 +34,9 @@ sections:
         alignItems: center
         flexDirection: row
         padding:
-          - pt-16
+          - pt-16 sm:pt-24
           - pl-6 md:pl-14
-          - pb-16
+          - pb-16 sm:pb-24
           - pr-6 md:pr-14
 
   # WHAT WE DO
@@ -62,7 +62,7 @@ sections:
           • Cloud security reviews and evidence collection for AWS and Azure government workloads
           
           • Detection engineering (cloud, identity, endpoint) aligned to federal use cases
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -85,7 +85,7 @@ sections:
           • Cloud security engineers experienced with AWS GovCloud and Azure Government
           
           • Automation & SOAR engineers to reduce manual triage and improve incident response
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -98,8 +98,8 @@ sections:
     styles:
       self:
         padding:
-          - pt-16
-          - pb-16
+          - pt-20
+          - pb-20
           - pl-6 md:pl-14
           - pr-6 md:pr-14
       subtitle:
@@ -146,7 +146,7 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-14, pb-14, pl-6, pr-6, md:pl-14, md:pr-14]
+        padding: [pt-20, pb-20, pl-6, pr-6, md:pl-14, md:pr-14]
       subtitle:
         textAlign: center
 
@@ -218,7 +218,7 @@ sections:
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+        padding: [pt-20, pb-20, pl-6, pr-6, md:pl-14, md:pr-14]
       subtitle:
         textAlign: center
 
@@ -250,7 +250,7 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+        padding: [pt-20, pb-20, pl-6, pr-6, md:pl-14, md:pr-14]
       subtitle:
         textAlign: center
 
@@ -274,7 +274,7 @@ sections:
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-14, pb-14, pl-6, pr-6, md:pl-14, md:pr-14]
+        padding: [pt-20, pb-20, pl-6, pr-6, md:pl-14, md:pr-14]
         textAlign: center
       subtitle:
         textAlign: center
@@ -293,14 +293,11 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-14, pb-14, pl-6, pr-6, md:pl-14, md:pr-14]
-        textAlign: center
+        padding: [pt-20, pb-20, pl-6, pr-6, md:pl-14, md:pr-14]
         maxWidth:
           - max-w-4xl
         margin:
           - mx-auto
-      text:
-        textAlign: center
 
   # FINAL CTA
   - type: GenericSection
@@ -320,7 +317,7 @@ sections:
     colors: bg-dark-fg-light
     styles:
       self:
-        padding: [pt-16, pb-16, pl-6, pr-6, md:pl-14, md:pr-14]
+        padding: [pt-16 sm:pt-24, pb-16 sm:pb-24, pl-6, pr-6, md:pl-14, md:pr-14]
         textAlign: center
       subtitle:
         textAlign: center

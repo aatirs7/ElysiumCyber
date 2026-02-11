@@ -27,12 +27,12 @@ export default function Footer(props) {
                 'sb-component-footer',
                 colors,
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
-                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-4 py-12 sm:py-28'
+                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-6 py-16 sm:py-28'
             )}
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
         >
             <div className="mx-auto max-w-[1800px]">
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
                     {(logo?.url || title || text) && (
                         <div className="pb-8 sm:col-span-2 lg:col-span-1">
                             {(logo?.url || title) && (
@@ -64,7 +64,7 @@ export default function Footer(props) {
                         <div className="pb-6">
                             <ul className="flex flex-wrap items-center" {...(enableAnnotations && { 'data-sb-field-path': 'socialLinks' })}>
                                 {socialLinks.map((link, index) => (
-                                    <li key={index} className="text-2xl mb-2 mr-8 lg:mr-12 last:mr-0">
+                                    <li key={index} className="text-3xl mb-2 mr-8 lg:mr-12 last:mr-0">
                                         <Social {...link} {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })} />
                                     </li>
                                 ))}
@@ -116,7 +116,7 @@ function FooterLinksGroup(props) {
                 <ul className={classNames('space-y-3', { 'mt-7': title })} {...(fieldPath && { 'data-sb-field-path': '.links' })}>
                     {links.map((link, index) => (
                         <li key={index}>
-                            <Action {...link} className="text-sm" {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />
+                            <Action {...link} className="text-sm sm:text-base" {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />
                         </li>
                     ))}
                 </ul>
