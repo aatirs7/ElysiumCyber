@@ -409,6 +409,102 @@
             @apply border-primaryLight text-primaryLight;
         }
     }
+
+    /* ===== Hero Aurora Gradient ===== */
+    #hero {
+        overflow: hidden;
+        background: #050510 !important;
+    }
+    #hero::before {
+        content: '';
+        position: absolute;
+        inset: -50%;
+        width: 200%;
+        height: 200%;
+        z-index: 0;
+        background:
+            radial-gradient(ellipse at 30% 40%, rgba(139, 92, 246, 0.35) 0%, transparent 50%),
+            radial-gradient(ellipse at 70% 55%, rgba(236, 72, 153, 0.28) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 80%, rgba(79, 70, 229, 0.22) 0%, transparent 50%),
+            radial-gradient(ellipse at 20% 70%, rgba(168, 85, 247, 0.18) 0%, transparent 45%);
+        filter: blur(100px) saturate(140%);
+        animation: aurora-shift 25s ease-in-out infinite;
+    }
+    #hero::after {
+        content: '';
+        position: absolute;
+        inset: -30%;
+        width: 160%;
+        height: 160%;
+        z-index: 0;
+        background:
+            radial-gradient(ellipse at 65% 30%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+            radial-gradient(ellipse at 35% 65%, rgba(139, 92, 246, 0.12) 0%, transparent 50%);
+        filter: blur(80px);
+        animation: aurora-shift 25s ease-in-out infinite reverse;
+    }
+    @keyframes aurora-shift {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(5%, 3%) rotate(2deg); }
+        66% { transform: translate(-3%, 5%) rotate(-1deg); }
+    }
+    /* Hero content above aurora */
+    #hero > .w-full {
+        z-index: 1;
+    }
+
+    /* Hero gradient heading */
+    #hero .sb-component-title {
+        background: linear-gradient(135deg, #ec4899 0%, #a855f7 40%, #818CF8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    /* Hero primary button - white rounded pill */
+    #hero .sb-component-button-primary {
+        @apply bg-white text-dark border-white;
+        border-radius: 9999px;
+        padding: 1rem 2.5rem;
+        font-weight: 600;
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+    }
+    @media (hover: hover) {
+        #hero .sb-component-button-primary:hover {
+            @apply bg-white;
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.35);
+            transform: translateY(-2px);
+        }
+    }
+
+    /* Hero secondary link - outline rounded pill */
+    #hero .sb-component-link-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 9999px;
+        padding: 1rem 2.5rem;
+        color: rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease;
+    }
+    @media (hover: hover) {
+        #hero .sb-component-link-secondary:hover {
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    /* Hero subtitle - softer, thinner */
+    #hero p {
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 300;
+        max-width: 640px;
+    }
+
+    /* Hero badge - slightly larger */
+    #hero .sb-component-badge img {
+        @apply h-7 sm:h-8;
+    }
 }
 
 @layer utilities {

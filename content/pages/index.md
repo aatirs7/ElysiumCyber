@@ -4,6 +4,7 @@ slug: /
 sections:
   # HERO SECTION
   - type: GenericSection
+    elementId: hero
     title:
       text: Cybersecurity Consulting & On-Demand Engineering
       color: text-light
@@ -12,9 +13,10 @@ sections:
       url: /images/elysium-cyber-badge.svg
       label: Elysium Cyber
       type: Badge
-    subtitle: We're a boutique security firm that helps organizations strengthen detections, automate response, and add engineering capacity without full-time hires.
-    text: >-
-      Whether you need a scoped project delivered or an embedded engineer to support your team, we provide the talent and expertise to get it done.
+    subtitle: >-
+      We're a boutique security firm that helps organizations strengthen
+      detections, automate response, and add engineering capacity — without
+      full-time hires.
     actions:
       - label: Book a Discovery Call
         url: https://calendly.com/elysiumventuresgroup/30min
@@ -24,13 +26,6 @@ sections:
         url: /services
         style: secondary
         type: Link
-    backgroundImage:
-      url: /images/hero-noise-gradient.svg
-      backgroundSize: cover
-      backgroundPosition: center
-      backgroundRepeat: no-repeat
-      opacity: 100
-      type: BackgroundImage
     colors: bg-dark-fg-light
     styles:
       self:
@@ -38,10 +33,13 @@ sections:
         flexDirection: col
         justifyContent: center
         padding:
-          - pt-20 sm:pt-32
+          - pt-28 sm:pt-40
           - pl-6 md:pl-14
-          - pb-20 sm:pb-32
+          - pb-28 sm:pb-40
           - pr-6 md:pr-14
+        textAlign: center
+      subtitle:
+        textAlign: center
 
   # WHAT WE DO
   - type: FeaturedItemsSection
