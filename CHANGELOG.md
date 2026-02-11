@@ -1,5 +1,48 @@
 # Changelog
 
+## Content Overhaul — Page Creation & Cleanup (2026-02-10)
+
+Major content restructuring to position the site as a pure B2B cybersecurity consulting firm.
+
+### Deleted
+- Internship program description page (`/internship`)
+- Duplicate homepage (`home.md`)
+- "How It Works" internship page (`/works`)
+- Internship pricing page (`/pricing`)
+- All 11 placeholder blog posts (Lorem Ipsum content with fake authors)
+
+### New Pages Created
+- `/services` — Consulting & on-demand engineering services with engagement models
+- `/about` — Company story, credentials, leadership
+- `/contact` — Contact form (name, email, company, interest, message) + direct contact info
+- `/terms` — Terms of Service
+- `/privacy` — Privacy Policy
+
+### Homepage Changes
+- Removed "Internships & Early Talent" section
+- Removed hero image (now text-only layout)
+- Fixed "View Our Capabilities" button to link to `/services`
+- Standardized "What We Do" card format (both cards now have intro paragraph + bullets)
+- Expanded "Recent Work" from 1 to 3 case study cards (detection, compliance, SOAR)
+- New noise gradient background replaces grid pattern on hero and CTA sections
+
+### Navigation & Footer
+- Header: Removed dead "Contracts" link. Nav is now: Services, About, Careers, Contact
+- Footer: Replaced "Internship Program" with Services/About links
+- Footer tagline updated to consulting-focused copy
+- Copyright updated to "2025 Elysium Cyber | Founded by Aatir Siddiqui"
+- Fixed Terms/Privacy URL trailing slashes
+
+### Visual Fixes
+- Badge SVG (`[ELYSIUM CYBER]`) changed from dark gray to white for visibility on dark backgrounds
+- Dark card borders strengthened from `border-white/10` to `border-white/[0.15]`
+- Positions page: Updated internship listing (mailto apply link, "Apply Now" button, flexible duration)
+
+### Blog
+- Reworked from PostFeedLayout to simple "Coming Soon" PageLayout page
+
+---
+
 ## Visual Overhaul — Dark Theme + Scroll Animations (2026-02-10)
 
 Complete visual redesign of the Elysium Cyber landing page. Transformed from a flat, gray-toned site into a modern dark-themed cybersecurity site with muted indigo accents, scroll animations, and professional polish.
