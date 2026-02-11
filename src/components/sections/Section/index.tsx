@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
 import BackgroundImage from '../../atoms/BackgroundImage';
+import AuroraBackground from '../../atoms/AuroraBackground';
 
 export default function Section(props) {
     const { elementId, className, colors = 'bg-light-fg-dark', backgroundImage, styles = {}, children } = props;
@@ -22,6 +23,7 @@ export default function Section(props) {
             )}
             {...getDataAttrs(props)}
         >
+            {elementId === 'hero' && <AuroraBackground />}
             {backgroundImage && <BackgroundImage {...backgroundImage} className="absolute inset-0" />}
             <div className="w-full max-w-[1800px] mx-auto relative">{children}</div>
         </div>

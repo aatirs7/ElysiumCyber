@@ -410,47 +410,24 @@
         }
     }
 
-    /* ===== Hero Aurora Gradient ===== */
+    /* ===== Hero Section ===== */
     #hero {
         overflow: hidden;
-        background: #050510 !important;
+        background: #0d0509 !important;
     }
-    #hero::before {
-        content: '';
-        position: absolute;
-        inset: -50%;
-        width: 200%;
-        height: 200%;
-        z-index: 0;
-        background:
-            radial-gradient(ellipse at 30% 40%, rgba(139, 92, 246, 0.35) 0%, transparent 50%),
-            radial-gradient(ellipse at 70% 55%, rgba(236, 72, 153, 0.28) 0%, transparent 50%),
-            radial-gradient(ellipse at 50% 80%, rgba(79, 70, 229, 0.22) 0%, transparent 50%),
-            radial-gradient(ellipse at 20% 70%, rgba(168, 85, 247, 0.18) 0%, transparent 45%);
-        filter: blur(100px) saturate(140%);
-        animation: aurora-shift 25s ease-in-out infinite;
-    }
-    #hero::after {
-        content: '';
-        position: absolute;
-        inset: -30%;
-        width: 160%;
-        height: 160%;
-        z-index: 0;
-        background:
-            radial-gradient(ellipse at 65% 30%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
-            radial-gradient(ellipse at 35% 65%, rgba(139, 92, 246, 0.12) 0%, transparent 50%);
-        filter: blur(80px);
-        animation: aurora-shift 25s ease-in-out infinite reverse;
-    }
-    @keyframes aurora-shift {
-        0%, 100% { transform: translate(0, 0) rotate(0deg); }
-        33% { transform: translate(5%, 3%) rotate(2deg); }
-        66% { transform: translate(-3%, 5%) rotate(-1deg); }
-    }
-    /* Hero content above aurora */
+    /* Content above canvas */
     #hero > .w-full {
+        position: relative;
         z-index: 1;
+    }
+
+    /* Center ALL hero text */
+    #hero {
+        text-align: center;
+    }
+    #hero .max-w-sectionBody {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Hero gradient heading */
@@ -459,6 +436,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        text-align: center;
     }
 
     /* Hero primary button - white rounded pill */
@@ -494,11 +472,13 @@
         }
     }
 
-    /* Hero subtitle - softer, thinner */
+    /* Hero subtitle - softer, thinner, centered */
     #hero p {
         color: rgba(255, 255, 255, 0.65);
         font-weight: 300;
         max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Hero badge - slightly larger */
